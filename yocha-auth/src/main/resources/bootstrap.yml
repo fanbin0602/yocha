@@ -2,7 +2,7 @@ server:
   port: 3000
 spring:
   application:
-    name: @artifactId@
+    name: yocha-auth
   cloud:
     nacos:
       discovery:
@@ -13,4 +13,4 @@ spring:
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
   profiles:
-    active: @profiles.active@
+    active: dev
